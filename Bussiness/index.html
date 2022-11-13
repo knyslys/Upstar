@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upstar - All company spending in one place</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="stylesheet" type="text/css" href="css-sass/style.css" />
+  </head>
+  <body>
+    <div class="container nav-container">
+      <nav class="top-navigation">
+        <img class="logo-img" src="images/logo.png" alt="Upstars logo" />
+
+        <!-- maboile nav -->
+        <div class="top-navigation__mobilenav top-navigation__mobilenav--off">
+          <i class="ph-circles-four icon unclicked-icon"></i>
+          <i class="ph-x icon clicked-icon"></i>
+
+          <div class="mobile-display">
+            <div class="overlay"></div>
+            <ul class="mobile_navbar">
+              <li class="mobile_navbar__item">
+                <a href="section-pro" class="nav-link">Product</a>
+              </li>
+              <li class="mobile_navbar__item mobile_navbar__item--whyupstar">
+                <a href="#" class="nav-link">Why upstar</a>
+              </li>
+              <li class="mobile_navbar__item mobile_navbar__item--resources">
+                <a href="#" class="nav-link">Resources</a>
+              </li>
+              <li class="mobile_navbar__item">
+                <a href="#" class="nav-link">Pricing</a>
+              </li>
+              <li class="mobile_navbar__item">
+                <a href="#" class="nav-link">Carrers</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- mobile nav end -->
+        <ul class="top-navigation__navbar">
+          <li class="top-navigation__navbar__item">
+            <a href="#id-about" class="nav-link">Product</a>
+          </li>
+          <li
+            class="top-navigation__navbar__item top-navigation__navbar__item--whyupstar"
+          >
+            <a href="#" class="nav-link">Why upstar</a>
+            <i class="ph-caret-down nav-icon"></i>
+
+            <div class="why__menu hidden">
+              <ul class="menu-list">
+                <li class="menu-list__item">
+                  <a href="#">Our clients</a>
+                </li>
+                <li class="menu-list__item">
+                  <a href="#">Our clients</a>
+                </li>
+                <li class="menu-list__item">
+                  <a href="#">Our clients</a>
+                </li>
+                <li class="menu-list__item">
+                  <a href="#">Our clients</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li
+            class="top-navigation__navbar__item top-navigation__navbar__item--resources"
+          >
+            <a href="#" class="nav-link">Resources</a>
+            <i class="ph-caret-down nav-icon"></i>
+
+            <div class="resources__menu hidden">
+              <ul class="menu-list">
+                <li class="menu-list__item">
+                  <a href="#">Our clients</a>
+                </li>
+                <li class="menu-list__item">
+                  <a href="#">Our clients</a>
+                </li>
+                <li class="menu-list__item">
+                  <a href="#">Our clients</a>
+                </li>
+                <li class="menu-list__item">
+                  <a href="#">Our clients</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="top-navigation__navbar__item">
+            <a href="#" class="nav-link">Pricing</a>
+          </li>
+          <li class="top-navigation__navbar__item">
+            <a href="#footerId" class="nav-link">Carrers</a>
+          </li>
+        </ul>
+
+        <div class="top-navigation__loginform">
+          <a class="btn btn-simple" href="#">Request demo</a>
+          <a class="btn btn-login" href="#">Log in</a>
+        </div>
+      </nav>
+    </div>
+
+    <header class="header" id="id-header">
+      <div class="container">
+        <div class="header-container grid">
+          <div class="header-container__textBox">
+            <h1 class="title">All company spending in one place</h1>
+            <p class="text-paragraph mg-top-sm">
+              Modernise the way you spend, manage invoices, reimburse, and turn
+              insights into actions with our flexible all-in-one spend managment
+              platform
+            </p>
+            <form class="request mg-top-md">
+              <label for="input input--email">Work email*</label>
+              <input
+                type="text"
+                placeholder="name@example.com"
+                class="input input--email"
+              />
+              <a href="#" class="btn btn-login">Request a demo</a>
+            </form>
+            <span class="smaller-text mg-top-md"
+              >Forward thinking companies choose Leapsome</span
+            >
+          </div>
+          <div class="header-container__imgBox">
+            <div class="image-container">
+              <img
+                class="image-container__img"
+                src="images/header-img.jpg"
+                alt="header-img"
+              />
+
+              <div class="image-container__total-container grid">
+                <div class="received">
+                  <span class="strong-text">Total received</span>
+                  <h2 class="subheading">$47,583.83</h2>
+                  <a class="btn btn-transparent">10% since last month</a>
+                </div>
+                <div class="pending">
+                  <a class="btn btn-transparent">Pending</a>
+                  <span class="smaller-text">$100,233.53</span>
+                  <a class="btn btn-transparent">In drafts</a>
+                  <span class="smaller-text">$49.53</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="partners">
+          <img src="images/partners/babbel.png" class="partner-logo" />
+          <img src="images/partners/bolt.png" class="partner-logo" />
+          <img src="images/partners/spotify.png" class="partner-logo" />
+          <img src="images/partners/unity.png" class="partner-logo" />
+          <img src="images/partners/mercedes.png" class="partner-logo" />
+        </div>
+      </div>
+    </header>
+
+    <section class="section-about section-hidden" id="id-about">
+      <div class="container">
+        <div class="about grid">
+          <div class="about__imgBox">
+            <div class="image-container">
+              <img
+                src="images/icons/monitoring.png"
+                alt="monitorinLogo"
+                class="image-container__img"
+              />
+
+              <div class="image-container__balanceBox">
+                <div class="iconFlex">
+                  <div class="icon-container">
+                    <i class="ph-wallet icon"></i>
+                  </div>
+                  <i class="ph-caret-right icon"></i>
+                </div>
+                <div class="textFLex">
+                  <span class="strong-text">Balance</span>
+                  <span class="smaller-text">April 2022</span>
+                  <span class="strong-text">$20,201</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about__textBox">
+            <h2 class="section-title">Master invoice managment with Upstar</h2>
+            <p class="text-paragraph mg-top-sm">
+              Streamline your process for incoming invoices with Upstar.
+              Capture, approve, and pay with just a few clicks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-products section-hidden">
+      <div class="container">
+        <div class="products grid">
+          <div class="products__textBox">
+            <h2 class="section-subheading">Products, solutions, pricing</h2>
+            <h2 class="section-title mg-top-md">
+              Goodbye expense reports with Upstar
+            </h2>
+            <p class="text-paragraph mg-top-sm">
+              One card for each employee. Digital invoice managment and
+              reimbursments. Built in approvals and automated precounting.
+            </p>
+          </div>
+          <div class="products__imgBox mg-top-sm">
+            <div class="image-container">
+              <img
+                src="images/icons/video-conference.png"
+                alt="video-conference"
+                class="image-container__img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-needs section-hidden">
+      <div class="container">
+        <div class="needs grid">
+          <div class="needs__imgBox">
+            <div class="image-container">
+              <img
+                src="images/linkedin-sales-solutions-wS73LE0GnKs-unsplash.jpg"
+                alt="working-person"
+                class="image-container__img"
+              />
+
+              <!-- floating clientdetails box -->
+              <div class="image-container__clientDetails">
+                <span class="strong-text">Client details</span>
+                <!-- top of box, containing client email, name, photo -->
+                <div class="clientFlex">
+                  <div class="clientFlex__picture">
+                    <img
+                      src="images/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg"
+                      alt="client-picture"
+                      class="clientFlex__picture__img"
+                    />
+                  </div>
+                  <div class="clientFlex__info">
+                    <span class="clientFlex__info--name strong-text"
+                      >Zake Grizly</span
+                    >
+                    <span class="clientFlex__info--emai smaller-text"
+                      >grizly@moonlight.com</span
+                    >
+                  </div>
+                </div>
+                <div class="clientFlex">
+                  <span class="strong-text">Moonlight agency LTD</span>
+                  <i class="ph-check-circle-fill icon"></i>
+                </div>
+                <span class="smaller-text" style="display: block"
+                  >9 Avacia Drive Rome, NY 1330Q, USA</span
+                >
+                <a href="#" class="btn btn-blue">Add Customer</a>
+              </div>
+            </div>
+          </div>
+          <div class="needs__textBox">
+            <h2 class="section-title">All-in-one or excatly what you need</h2>
+            <p class="text-paragraph mg-top-sm">
+              Manage all your company spending in Upstar, or just select
+              products that suit your business needs.
+            </p>
+            <div class="list list--corporate mg-top-md">
+              <div class="list__listFlex">
+                <i class="ph-check-square icon"></i>
+                <span class="strong-text">Corporate cards</span>
+                <i class="ph-caret-down icon2"></i>
+              </div>
+              <ul class="list__items closed">
+                <li class="list__items__item">
+                  <i class="ph-check-circle-fill icon"></i
+                  ><span class="strong-text">Lorem lorem</span>
+                </li>
+                <li class="list__items__item">
+                  <i class="ph-check-circle-fill icon"></i
+                  ><span class="strong-text">Lorem lorem</span>
+                </li>
+                <li class="list__items__item">
+                  <i class="ph-check-circle-fill icon"></i
+                  ><span class="strong-text">Lorem lorem</span>
+                </li>
+                <li class="list__items__item">
+                  <i class="ph-check-circle-fill icon"></i
+                  ><span class="strong-text">Lorem lorem</span>
+                </li>
+              </ul>
+            </div>
+            <div class="list list--managment">
+              <div class="list__listFlex">
+                <i class="ph-check-square icon"></i>
+                <span class="strong-text">Invoice managment</span>
+                <i class="ph-caret-down icon2"></i>
+              </div>
+              <ul class="list__items closed">
+                <li class="list__items__item">
+                  <i class="ph-check-circle-fill icon"></i
+                  ><span class="strong-text">Lorem lorem</span>
+                </li>
+                <li class="list__items__item">
+                  <i class="ph-check-circle-fill icon"></i
+                  ><span class="strong-text">Lorem lorem</span>
+                </li>
+                <li class="list__items__item">
+                  <i class="ph-check-circle-fill icon"></i
+                  ><span class="strong-text">Lorem lorem</span>
+                </li>
+                <li class="list__items__item">
+                  <i class="ph-check-circle-fill icon"></i
+                  ><span class="strong-text">Lorem lorem</span>
+                </li>
+              </ul>
+            </div>
+            <div class="list list--reimbursments">
+              <div class="list__listFlex">
+                <i class="ph-check-square icon"></i>
+                <span class="strong-text">Reimbursments</span>
+                <i class="ph-caret-down icon2"></i>
+              </div>
+              <ul class="list__items closed">
+                <li class="list__items__item">
+                  <i class="ph-check-circle-fill icon"></i
+                  ><span class="strong-text">Lorem lorem</span>
+                </li>
+                <li class="list__items__item">
+                  <i class="ph-check-circle-fill icon"></i
+                  ><span class="strong-text">Lorem lorem</span>
+                </li>
+                <li class="list__items__item">
+                  <i class="ph-check-circle-fill icon"></i
+                  ><span class="strong-text">Lorem lorem</span>
+                </li>
+                <li class="list__items__item">
+                  <i class="ph-check-circle-fill icon"></i
+                  ><span class="strong-text">Lorem lorem</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-stats section-hidden">
+      <div class="container">
+        <div class="stats grid">
+          <div class="stats__col">
+            <h1 class="title">>12.M</h1>
+            <p class="text-paragraph">
+              Unique pieces of feedback shared accross the Leapsome platform
+            </p>
+          </div>
+          <div class="stats__col">
+            <h1 class="title">99%</h1>
+            <p class="text-paragraph">
+              Customer satisfaction for interactions with our steadfast and
+              caring success team.
+            </p>
+          </div>
+          <div class="stats__col">
+            <h1 class="title">4.9/5</h1>
+            <p class="text-paragraph">
+              User satisfaction based on verified rewiews on G2 and Capterra
+              platforms.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-testimonials section-hidden">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Dont take just our word for it</h2>
+          <p class="text-paragraph mg-top-sm">
+            Effortless transparency across expenses and income, finally. With
+            Upstar Insights, transactions from all accounts flow smoothly into
+            one place.
+          </p>
+        </div>
+
+        <div class="testimonial-container mg-top-bg">
+          <div class="testimonial-container__flex-container">
+            <div class="testimonial-container__flex-container__flex-item">
+              <div class="imgBox">
+                <div class="imgBox__img-container">
+                  <img
+                    src="images/bruce-mars-8YG31Xn4dSw-unsplash.jpg"
+                    alt="businessman"
+                    class="imgBox__img-container__img"
+                  />
+                </div>
+              </div>
+              <div class="textBox">
+                <span class="black-bg mg-bot-sm">SNOCKS</span>
+                <p class="text-paragraph">
+                  Head of Finance Gerrit Kern reveals how Joblift uses Upstar to
+                  master the increasing number of employe expenses and brings
+                  structure to financial managment.
+                </p>
+                <div class="clientFlex">
+                  <div class="clientFlex__picture">
+                    <img
+                      src="images/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg"
+                      alt="client-picture"
+                      class="clientFlex__picture__img"
+                    />
+                  </div>
+                  <div class="clientFlex__info">
+                    <span class="clientFlex__info--name strong-text"
+                      >Zake Grizly</span
+                    >
+                    <span class="clientFlex__info--emai smaller-text"
+                      >grizly@moonlight.com</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-container__flex-container">
+            <div class="testimonial-container__flex-container__flex-item">
+              <div class="imgBox">
+                <div class="imgBox__img-container">
+                  <img
+                    src="images/bruce-mars-8YG31Xn4dSw-unsplash.jpg"
+                    alt="businessman"
+                    class="imgBox__img-container__img"
+                  />
+                </div>
+              </div>
+              <div class="textBox">
+                <span class="black-bg">SNOCKS</span>
+                <p class="text-paragraph">
+                  Head of Finance Gerrit Kern reveals how Joblift uses Upstar to
+                  master the increasing number of employe expenses and brings
+                  structure to financial managment.
+                </p>
+                <div class="clientFlex">
+                  <div class="clientFlex__picture">
+                    <img
+                      src="images/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg"
+                      alt="client-picture"
+                      class="clientFlex__picture__img"
+                    />
+                  </div>
+                  <div class="clientFlex__info">
+                    <span class="clientFlex__info--name strong-text"
+                      >Zake Grizly</span
+                    >
+                    <span class="clientFlex__info--emai smaller-text"
+                      >grizly@moonlight.com</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-container__flex-container">
+            <div class="testimonial-container__flex-container__flex-item">
+              <div class="imgBox">
+                <div class="imgBox__img-container">
+                  <img
+                    src="images/bruce-mars-8YG31Xn4dSw-unsplash.jpg"
+                    alt="businessman"
+                    class="imgBox__img-container__img"
+                  />
+                </div>
+              </div>
+              <div class="textBox">
+                <span class="black-bg">SNOCKS</span>
+                <p class="text-paragraph">
+                  Head of Finance Gerrit Kern reveals how Joblift uses Upstar to
+                  master the increasing number of employe expenses and brings
+                  structure to financial managment.
+                </p>
+                <div class="clientFlex">
+                  <div class="clientFlex__picture">
+                    <img
+                      src="images/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg"
+                      alt="client-picture"
+                      class="clientFlex__picture__img"
+                    />
+                  </div>
+                  <div class="clientFlex__info">
+                    <span class="clientFlex__info--name strong-text"
+                      >Zake Grizly</span
+                    >
+                    <span class="clientFlex__info--emai smaller-text"
+                      >grizly@moonlight.com</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-container__flex-container">
+            <div class="testimonial-container__flex-container__flex-item">
+              <div class="imgBox">
+                <div class="imgBox__img-container">
+                  <img
+                    src="images/bruce-mars-8YG31Xn4dSw-unsplash.jpg"
+                    alt="businessman"
+                    class="imgBox__img-container__img"
+                  />
+                </div>
+              </div>
+              <div class="textBox">
+                <span class="black-bg">SNOCKS</span>
+                <p class="text-paragraph">
+                  Head of Finance Gerrit Kern reveals how Joblift uses Upstar to
+                  master the increasing number of employe expenses and brings
+                  structure to financial managment.
+                </p>
+                <div class="clientFlex">
+                  <div class="clientFlex__picture">
+                    <img
+                      src="images/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg"
+                      alt="client-picture"
+                      class="clientFlex__picture__img"
+                    />
+                  </div>
+                  <div class="clientFlex__info">
+                    <span class="clientFlex__info--name strong-text"
+                      >Zake Grizly</span
+                    >
+                    <span class="clientFlex__info--emai smaller-text"
+                      >grizly@moonlight.com</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="switch switch--left-arrow">
+            <i class="ph-arrow-fat-left icon"></i>
+          </div>
+          <div class="switch switch--right-arrow">
+            <i class="ph-arrow-fat-right icon"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-request">
+      <div class="container">
+        <div class="request grid">
+          <div class="request__textBox">
+            <h2 class="section-title mg-bot-sm">
+              Managing liquidity in real time
+            </h2>
+            <p class="text-paragraph mg-bot-md">
+              One card for each employee. Digital invoice managment and
+              reimbursments. Built-in approvals and automated pre-accounting.
+            </p>
+            <a href="#" class="btn btn-login">Request Demo</a>
+          </div>
+          <div class="request__imgBox">
+            <div
+              class="request__imgBox__image-container request__imgBox__image-container--google"
+            >
+              <img
+                src="images/partners/google.png"
+                class="request__imgBox__image-container request__imgBox__image-container__img"
+                alt="google"
+              />
+            </div>
+            <div
+              class="request__imgBox__image-container request__imgBox__image-container--jira"
+            >
+              <img
+                src="images/partners/jira.png"
+                class="request__imgBox__image-container request__imgBox__image-container__img"
+                alt="jira"
+              />
+            </div>
+            <div
+              class="request__imgBox__image-container request__imgBox__image-container--outlook"
+            >
+              <img
+                src="images/partners/outlook.png"
+                class="request__imgBox__image-container request__imgBox__image-container__img"
+                alt="outlook"
+              />
+            </div>
+            <div
+              class="request__imgBox__image-container request__imgBox__image-container--slack"
+            >
+              <img
+                src="images/partners/slack.png"
+                class="request__imgBox__image-container request__imgBox__image-container__img"
+                alt="slack"
+              />
+            </div>
+            <div
+              class="request__imgBox__image-container request__imgBox__image-container--facebook"
+            >
+              <img
+                src="images/partners/Facebook.png"
+                class="request__imgBox__image-container request__imgBox__image-container__img"
+                alt="facebook"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="section-footer" id="footerId">
+      <div class="container">
+        <div class="footer grid">
+          <div class="footer__col footer__col--upstar">
+            <span class="strong-text">Upstar.</span>
+            <div class="footer__col__list">
+              <p class="text-paragraph">
+                Develop your people, scale your business.
+              </p>
+              <div class="footer__col__social-media">
+                <div class="icon-container">
+                  <i class="ph-twitter-logo icon"></i>
+                </div>
+                <div class="icon-container">
+                  <i class="ph-facebook-logo icon"></i>
+                </div>
+                <div class="icon-container">
+                  <i class="ph-instagram-logo icon"></i>
+                </div>
+              </div>
+              <address>Dunker str. 10437 Berlin, Germany</address>
+              <p class="text-parapgraph"></p>
+              <span class="smaller-text">Email: sales@upstar.com</span>
+            </div>
+          </div>
+          <div class="footer__col footer__col--product">
+            <span class="strong-text">Products</span>
+
+            <ul class="footer__col__list">
+              <li class="footer__col__list__item">
+                <a href="#" class="link">Corporate Cards</a>
+              </li>
+              <li class="footer__col__list__item">
+                <a href="#" class="link">Digital invoice managment</a>
+              </li>
+              <li class="footer__col__list__item">
+                <a href="#" class="link">Reimbursments</a>
+              </li>
+              <li class="footer__col__list__item">
+                <a href="#" class="link">Insights</a>
+              </li>
+              <li class="footer__col__list__item">
+                <a href="#" class="link">Resources</a>
+              </li>
+              <li class="footer__col__list__item">
+                <a href="#" class="link">Pricing</a>
+              </li>
+              <li class="footer__col__list__item">
+                <a href="#" class="link">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col--resources">
+            <span class="strong-text">Resources</span>
+            <ul class="footer__col__list">
+              <li class="footer__col__list__item">
+                <a href="#" class="link">Help Center</a>
+              </li>
+              <li class="footer__col__list__item">
+                <a href="#" class="link">Exchange Rates</a>
+              </li>
+              <li class="footer__col__list__item">
+                <a href="#" class="link">Company</a>
+              </li>
+              <li class="footer__col__list__item">
+                <a href="#" class="link">About us</a>
+              </li>
+              <li class="footer__col__list__item">
+                <a href="#" class="link">Partnerships</a>
+              </li>
+              <li class="footer__col__list__item">
+                <a href="#" class="link">Press</a>
+              </li>
+              <li class="footer__col__list__item">
+                <a href="#" class="link">Jobs</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col--company">
+            <span class="strong-text">Company</span>
+            <ul class="footer__col__list">
+              <li class="footer__col__list__item">
+                <a href="#" class="link">We're hiring!</a>
+              </li>
+              <li class="footer__col__list__item">
+                <a href="#" class="link">Contact</a>
+              </li>
+              <li class="footer__col__list__item">
+                <a href="#" class="link">Graduate Program</a>
+              </li>
+              <li class="footer__col__list__item">
+                <a href="#" class="link">Privacy Policy</a>
+              </li>
+              <li class="footer__col__list__item">
+                <a href="#" class="link">Terms of Service</a>
+              </li>
+              <li class="footer__col__list__item">
+                <a href="#" class="link">Impressium</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

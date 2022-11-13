@@ -1,0 +1,14 @@
+{
+  "name": "bussiness",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "sass css-sass/main.scss css-sass/style.css -w"
+  },
+  "author": "Vakaris",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.56.0"
+  }
+}

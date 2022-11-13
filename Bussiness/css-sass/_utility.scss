@@ -1,0 +1,242 @@
+//variables
+//colors
+$mainColor: #6d7079;
+$secondaryColor: #3b6ff6;
+//tints:
+$white-01: #f5f5f5;
+//shades
+$dark-01: #52565f;
+$dark-02: #2b313d;
+
+//margins
+
+.section-hidden {
+  opacity: 0;
+}
+
+.mg-top-bg {
+  margin-top: 8rem;
+}
+
+.mg-top-md {
+  margin-top: 4rem;
+}
+
+.mg-top-sm {
+  margin-top: 2rem;
+}
+
+.mg-bot-sm {
+  margin-bottom: 2rem;
+}
+.mg-bot-md {
+  margin-bottom: 4rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+//h1, h2 tags
+.title {
+  font-size: 9rem;
+  line-height: 1.1;
+  font-weight: 600;
+  color: $dark-02;
+}
+
+.section-title {
+  font-size: 4rem;
+  color: $dark-02;
+  line-height: 1.1;
+}
+
+.section-subheading {
+  font-size: 2rem;
+  color: $secondaryColor;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+//different text
+
+.smaller-text {
+  font-size: 1.4rem;
+  display: inline-block;
+}
+
+.strong-text {
+  font-weight: 600;
+  display: inline-block;
+}
+
+.black-bg {
+  color: #fff;
+  background-color: #000;
+  font-weight: 600;
+  display: inline-block;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+//buttons
+.btn {
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  border-radius: 10px;
+  font-weight: 500;
+  color: $mainColor;
+  &-login {
+    // background-color: red;
+    color: #fff;
+    background-color: #000000;
+    transition: 0.3s all linear;
+    position: relative;
+    box-shadow: 0px 2px 5px 3px rgba($color: #000000, $alpha: 0.1);
+    &:hover {
+      background-color: #333232;
+      transform: translateY(-2px);
+      &::before {
+        transform: scale(1.2);
+        opacity: 0;
+      }
+    }
+
+    &:active {
+      box-shadow: 0px 2px 5px 3px rgba($color: #000000, $alpha: 0.5);
+      transform: translateY(2px);
+    }
+
+    &::before {
+      transition: 0.3s all linear;
+      border-radius: 10px;
+      z-index: -1;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: #000000;
+    }
+  }
+
+  &-simple {
+    transition: 0.3s all linear;
+    &:hover {
+      color: $dark-01;
+    }
+  }
+
+  &-transparent {
+    border: 1px solid #000;
+  }
+
+  &-blue {
+    background-color: #ebf1ff;
+    color: $secondaryColor;
+    font-weight: 500;
+  }
+}
+
+//dropdown mixin
+
+.hidden {
+  display: none !important;
+}
+
+.closed {
+  opacity: 0;
+  transform: scaleX(0);
+  position: absolute;
+  // transition: 0.3s all linear;
+  top: 0;
+  left: 0;
+}
+
+@mixin dropmenu {
+  position: absolute;
+  font-size: 2rem;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: red;
+  width: 200%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  border: 0.5px solid rgb(83, 83, 83);
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    // gap: 2rem;
+    justify-content: space-evenly;
+    text-decoration: none;
+    width: 100%;
+    // padding: 2rem;
+    list-style: none;
+    // align-items: center;
+    // justify-content: center;
+    &__item {
+      background-color: $white-01;
+      width: 100%;
+      padding: 1rem 1rem;
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+      // border-bottom: 2px solid black;
+
+      &:nth-child(even) {
+        background-color: #e0e0e0;
+      }
+    }
+  }
+}
+
+@mixin border-radius-img {
+  border: 3px solid $secondaryColor;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+//reusable grid
+
+.grid {
+  display: grid;
+}
+
+.grid-col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+//client testimonial
+.clientFlex {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 2rem;
+  &__picture {
+    // max-width: 20%;
+    // max-height: 6rem;
+    max-width: 6rem;
+    max-height: 6rem;
+    border-radius: 5000%;
+    overflow: hidden;
+    &__img {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+  .icon {
+    color: $secondaryColor;
+  }
+}

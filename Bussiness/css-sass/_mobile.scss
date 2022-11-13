@@ -1,0 +1,152 @@
+//1230 px
+@media (max-width: 77em) {
+  html {
+    font-size: 50%;
+  }
+  .section-request {
+    .request {
+      &__imgBox {
+        max-width: 100%;
+        &__image-container {
+          transform: translate(0);
+        }
+      }
+    }
+  }
+}
+
+//900 px
+
+@media (max-width: 57em) {
+  .header-container {
+    text-align: center;
+
+    &__textBox {
+      max-width: 100%;
+      margin-bottom: 5rem;
+    }
+  }
+
+  .products {
+    text-align: center;
+  }
+  .about {
+    &__imgBox {
+      // margin-bottom: 4rem;
+    }
+    &__textBox {
+      grid-row: -1/1;
+      text-align: center;
+    }
+  }
+  .needs {
+    &__textBox {
+      grid-row: -1/1;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    &__imgBox {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .section-testimonials {
+    .container {
+      max-width: 100vw;
+    }
+  }
+
+  .top-navigation__navbar {
+    display: none;
+  }
+
+  .top-navigation__loginform {
+    display: none;
+  }
+  .top-navigation__mobilenav {
+    display: block;
+  }
+}
+
+//700px
+
+@media (max-width: 43em) {
+  html {
+    font-size: 43%;
+  }
+  .container {
+    max-width: 100vw;
+    padding: 3 3rem;
+  }
+
+  .section-testimonials {
+    .testimonial-container {
+      &__flex-container {
+        &__flex-item {
+          grid-template-columns: 1fr;
+          text-align: center;
+          justify-content: center;
+          padding: 3rem;
+          .textBox {
+            max-width: 100%;
+            text-align: center;
+          }
+          .imgBox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &__img-container {
+              max-width: 50% !important;
+              border-radius: 500%;
+              overflow: hidden;
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+            // max-width: 100%;
+            // text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+//500px
+
+@media (max-width: 32em) {
+  .top-navigation {
+    // justify-content: space-around;
+  }
+  .container {
+    padding: 2rem;
+  }
+
+  .section-stats {
+    .stats {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .footer {
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr) !important;
+
+    &__col {
+      &--upstar {
+        grid-column: -1/1;
+        grid-row: 2;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+@media (max-width: 26em) {
+  .header {
+    .title {
+      font-size: 5rem;
+    }
+  }
+}
